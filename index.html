@@ -6,9 +6,9 @@
            Music Blocks
         </title>
 
-	    <meta name="description" content="Learn to code through music with Music Blocks. Arrange colorful blocks to create everything from simple melodies to interactive games.">
+            <meta name="description" content="Learn to code through music with Music Blocks. Arrange colorful blocks to create everything from simple melodies to interactive games.">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
-	
+        
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
         <!-- <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet"> --> 
         
@@ -29,7 +29,8 @@
 
         <script src="lib/reqwest.js" defer></script>
 
-        <script src="lib/jquery-3.7.1.js"></script>
+        <!-- <script src="lib/jquery-3.7.1.js"></script> -->
+        <script src="lib/jquery-2.1.4.min.js"></script>
 
         <script src="lib/jquery-ui.js" defer></script>
 
@@ -103,6 +104,11 @@
                 }
             }
         </script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                doSearch();
+            });
+        </script>
     </head>
 
     <!-- #96D3F3-->
@@ -141,10 +147,10 @@
                     }
 
                     console.debug("Using " + lang);
-		    if (lang === undefined) {
-			lang = "enUS";
-			console.debug("Reverting to " + lang);
-		    }
+                    if (lang === undefined) {
+                        lang = "enUS";
+                        console.debug("Reverting to " + lang);
+                    }
                     
                     // Intentional placement of SVG image per user request by Japanese Schools.
                     
@@ -852,11 +858,11 @@
                     <li><a id="pt"></a></li>
                     <li><a id="ja"></a></li>
                     <li><a id="kana"></a></li>
-		    <li><a id="ko"></a></li>
+                    <li><a id="ko"></a></li>
                     <li><a id="zhCN"></a></li>
                     <li><a id="th"></a></li>
                     <li><a id="ayc"></a></li>
-		    <li><a id="quz"></a></li>
+                    <li><a id="quz"></a></li>
                     <li><a id="gug"></a></li>
                     <li><a id="hi"></a></li>
                     <li><a id="te"></a></li>
